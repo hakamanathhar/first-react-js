@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
 
-
-
 export default function Button(props) {
     const className = [props.className];
     if(props.isPrimary) className.push("btn-primary")
@@ -44,7 +42,7 @@ export default function Button(props) {
                 rel={props.target === "_blank" ? "_blank" : "noopener noreferrer"}
             >
 
-                props.children
+                {props.children}
             </a>
             )
         } else {
