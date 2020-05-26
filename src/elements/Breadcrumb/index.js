@@ -4,11 +4,12 @@ import './index.scss';
 import Button from 'elements/button';
 
 export default function Breadcrumb(props) {
+    const className = ["breadcrumb", props.className];
     return (
         <nav aria-label="breadcrumb">
             <ol className={className.join(" ")}>
                 {
-                    props.data.map((item, index) => {
+                    props.data.map((item, index) =>  {
                         return(
                             <li key={`breadcrumb-${index}`}
                                 className={`breadcrumb-item ${

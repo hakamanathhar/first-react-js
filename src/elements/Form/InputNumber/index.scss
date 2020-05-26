@@ -35,3 +35,7 @@
         }
     }
 }
+
+input[readonly] {
+    cursor: context-menu;
+}
